@@ -1,0 +1,15 @@
+<!-- shoppingCart.wxml -->
+<import src="../../template/slice.wxml" />
+<view class="content" catchtouchmove="false">
+  <view class="banner" style="justify-content: center;">
+    <text class="bannerTitle">购物车</text>
+  </view>
+  <scroll-view class="container" scroll-y="true">
+    <template is="slice" data="{{name:'包子',number:0}}" />
+  </scroll-view>
+  <view class="columnPanel">
+    <text id="totalTitle">合计:</text>
+    <text id="total">0.00 元</text>
+    <button id="submitBtn">结账</button>
+  </view>
+</view>

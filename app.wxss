@@ -1,10 +1,69 @@
 /**app.wxss**/
-.container {
+page{
+  height: 100%;
+}
+
+.content {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
-  padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.banner {
+  width: 100%;
+  background: #ee1d23;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  align-items: center;
+  color: white;
+}
+
+.column {
+  width: 100%;
+  padding: 20rpx 0;
+  background: #ee1d23;
+  color: white;
+  text-align: center;
+}
+
+.bannerImg {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 25rpx;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 1000rpx;
+}
+
+
+.columnPanel{
+  border-top:1rpx #ee1d23 solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+#submitBtn{
+  margin: 0;
+  margin-right: 30rpx;
+  background: #ee1d23;
+  color: white;
+  border-radius: 25%;
+}
+
+#totalTitle{
+  margin-left: 50rpx;
+}
+
+#total{
+  margin-right: 200rpx;
+}

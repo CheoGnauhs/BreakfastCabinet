@@ -1,12 +1,14 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/shoppingCart/shoppingCart",
+    "pages/user/user"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor" :"#EE1D23",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "学生早餐柜"
   }
 }

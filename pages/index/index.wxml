@@ -1,13 +1,38 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<import src="../../template/slice.wxml" />
+<view class="content" catchtouchmove="false">
+  <view class="banner">
+    <navigator url="../user/user" hover-class="navigator-hover">
+      <image class="bannerImg" src="../../img/avatar.png">头像</image>
+    </navigator>
+    <text class="bannerTitle">今日早餐</text>
+    <navigator url="../shoppingCart/shoppingCart" hover-class="navigator-hover">
+      <image class="bannerImg" onclick src="../../img/shoppingCart.png">购物车</image>
+    </navigator>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <scroll-view class="container" scroll-y="true">
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+    <template is="slice" data="{{name:'包子',number:'0'}}" />
+  </scroll-view>
+  <!-- <button class="column" id="submitBtn">加入购物车 
+    ( <text>count</text> )
+  </button> -->
+  <view class="columnPanel">
+    <text id="totalTitle">合计:</text>
+    <text id="total">0 件</text>
+    <button id="submitBtn">提交</button>
   </view>
 </view>
