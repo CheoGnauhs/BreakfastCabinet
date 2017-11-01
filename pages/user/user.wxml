@@ -1,0 +1,17 @@
+<view class="content" catchtouchmove="false" style="justify-content: flex-start;">
+  <view class="banner" style="justify-content: center;">
+    <text class="bannerTitle">用户中心</text>
+  </view>
+  <view class="userPanel">
+    <view class="userInfo">
+      <image src="../../img/avatar.jpg" class="avatar"></image>
+      <text class="name">Username</text>
+    </view>
+    <view class="buttonPanel">
+      <button class="panelBtn">个人信息</button>
+      <button class="panelBtn">我的订单</button>
+      <button class="panelBtn">常见问题</button>
+    </view>
+    <footer>Copyright 2017. All rights reserved. </footer>
+  </view>
+</view>

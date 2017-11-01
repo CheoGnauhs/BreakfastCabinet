@@ -1,0 +1,35 @@
+.userPanel{
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar{
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  margin: 25rpx 0;
+}
+
+.userInfo{
+  margin-top: 100rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttonPanel{
+  width: 80%;
+  margin-bottom: 100rpx;
+}
+
+.panelBtn{
+  width: 80%;
+  background: white;
+  text-decoration: none;
+  color: #ee1d23;
+  margin: 20rpx auto;
+}
